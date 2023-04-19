@@ -1,5 +1,6 @@
-package com.example.jpaself.entity.component;
+package com.example.jpaself.domain.component;
 
+import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,13 +10,14 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Table(name="IMAGE")
-public class ImageEntity {
+public class Image {
     //Id column
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "image_id", nullable = false)
+    @Column(name = "image_id")
     private long id;
 
     //Other columns
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(columnDefinition = "TEXT")
+    @NotNull
     private String url;
 }

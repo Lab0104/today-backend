@@ -11,4 +11,5 @@ public class JpaController {
     public String getHello(){
         return "a";
     }
+
 }
