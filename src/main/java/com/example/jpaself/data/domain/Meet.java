@@ -1,9 +1,9 @@
-package com.example.jpaself.domain;
+package com.example.jpaself.data.domain;
 
-import com.example.jpaself.domain.component.Category;
-import com.example.jpaself.domain.mapping.HashtagMapping;
-import com.example.jpaself.domain.mapping.Likes;
-import com.example.jpaself.domain.mapping.Member;
+import com.example.jpaself.data.domain.mapping.HashtagMapping;
+import com.example.jpaself.data.domain.mapping.Likes;
+import com.example.jpaself.data.domain.component.Category;
+import com.example.jpaself.data.domain.mapping.Member;
 import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;

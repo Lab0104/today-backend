@@ -1,6 +1,6 @@
-package com.example.jpaself.domain.component;
+package com.example.jpaself.data.domain.component;
 
-import com.example.jpaself.domain.mapping.HashtagMapping;
+import com.example.jpaself.data.domain.mapping.HashtagMapping;
 import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;

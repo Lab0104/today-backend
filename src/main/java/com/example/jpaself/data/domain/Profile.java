@@ -1,6 +1,6 @@
-package com.example.jpaself.domain;
+package com.example.jpaself.data.domain;
 
-import com.example.jpaself.domain.component.Image;
+import com.example.jpaself.data.domain.component.Image;
 import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
