@@ -14,9 +14,9 @@ import java.util.List;
 @Table(name="USER")
 public class User {
     //Id column
-    @Id
+    @Id @GeneratedValue
     @Column(name = "user_id", length = 45)
-    private String id;
+    private Long id;
 
     //Other columns
     @Column(length = 45)
@@ -50,25 +50,25 @@ public class User {
     private String passwordKey;
 
     //slave
-    @OneToMany(mappedBy = "userProfile", orphanRemoval = true)
-    List<Profile> myProfile = new ArrayList<>(); //프로필 조회
-
-    @OneToMany(mappedBy = "userAlarm", orphanRemoval = true)
-    List<Alarm> myAlarm = new ArrayList<>(); //알람 조회
-
-    @OneToMany(mappedBy = "userAdvertisement")
-    List<Advertisement> myAdvertisement = new ArrayList<>(); //광고 조회
-
-    @OneToMany(mappedBy = "userInterests", orphanRemoval = true)
-    List<Interests> myInterests = new ArrayList<>(); //관심사 카테고리 조회
-
-    @OneToMany(mappedBy = "userLikes")
-    List<Likes> myLikes = new ArrayList<>(); //좋아요 조회
-
-    @OneToMany(mappedBy = "userHistory", orphanRemoval = true)
-    List<History> myHistory = new ArrayList<>(); //후기 내역 조회
-
-    @OneToMany(mappedBy = "userInfo", orphanRemoval = true)
-    List<Member> myMember = new ArrayList<>(); //참가중인 모임 조회
+//    @OneToMany(mappedBy = "userProfile", orphanRemoval = true)
+//    List<Profile> myProfile = new ArrayList<>(); //프로필 조회
+//
+//    @OneToMany(mappedBy = "userAlarm", orphanRemoval = true)
+//    List<Alarm> myAlarm = new ArrayList<>(); //알람 조회
+//
+//    @OneToMany(mappedBy = "userAdvertisement")
+//    List<Advertisement> myAdvertisement = new ArrayList<>(); //광고 조회
+//
+//    @OneToMany(mappedBy = "userInterests", orphanRemoval = true)
+//    List<Interests> myInterests = new ArrayList<>(); //관심사 카테고리 조회
+//
+//    @OneToMany(mappedBy = "userLikes")
+//    List<Likes> myLikes = new ArrayList<>(); //좋아요 조회
+//
+//    @OneToMany(mappedBy = "userHistory", orphanRemoval = true)
+//    List<History> myHistory = new ArrayList<>(); //후기 내역 조회
+//
+//    @OneToMany(mappedBy = "userInfo", orphanRemoval = true)
+//    List<Member> myMember = new ArrayList<>(); //참가중인 모임 조회
 
 }
