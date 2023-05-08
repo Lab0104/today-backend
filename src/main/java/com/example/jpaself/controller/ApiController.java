@@ -42,11 +42,13 @@ public class ApiController {
             @PathVariable("id") Long id,
             @RequestBody UpdateUserRequest request) {
 
-        userService.update(id, request.getEmail(), request.getAddress());
+        userService.update(id, request.getEmail(), request.getPassword());
         User findUser = userService.findOne(id);
         return new UpdateUserResponse(findUser.getNickname(), findUser.getEmail());
     }
 
+//    @GetMapping("/api/users/test/{id}")
+//    public
     @GetMapping("/api/users/{id}")
     public ResponseEntity<User> userEntity(
             @PathVariable("id") Long id,
